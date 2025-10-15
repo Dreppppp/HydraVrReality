@@ -40,12 +40,12 @@ export default function Header() {
   const prevSlide = () => {
     if (current > 0) setCurrent(current - 1);
   };
-  
+
   return (
     <div className="relative w-full h-[650px] md:h-[750px] lg:h-[850px] bg-[#302C42] md:pt-[100px]">
       <div className="flex flex-col-reverse md:flex-row md:justify-between items-center px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-16">
-        <div className="w-full md:w-[460px] flex flex-col items-center mt-2 md:mt-0">
-          <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[40px] text-white font-bold text-center ">
+        <div className="w-full md:w-[460px] flex flex-col items-center lg:items-start mt-2 md:mt-0">
+          <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[40px] text-white font-bold text-center lg:text-start">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C0B7E8] to-[#8176AF]">
               DIVE
             </span>{" "}
@@ -64,9 +64,8 @@ export default function Header() {
             perceive digital spaces.
           </p>
           <div className="flex flex-col sm:flex-row justify-start items-center gap-4 mt-6 md:mt-10 w-full mb-[30px]">
-            <button className="transform transition-transform duration-300 cursor-pointer hover:scale-110 font-bold text-[#343045] text-[14px] font-bold w-[292px] h-[52px] rounded-[40px] flex justify-center items-center bg-gradient-to-r from-[#8176AF] to-[#C0B7E8]">
-              {" "}
-              BUILD YOUR WORLD{" "}
+            <button className="transform transition-transform duration-300 cursor-pointer hover:scale-110 font-bold text-[#343045] text-[14px] w-[292px] h-[52px] rounded-[40px] flex justify-center items-center bg-gradient-to-r from-[#8176AF] to-[#C0B7E8]">
+              BUILD YOUR WORLD
             </button>
             <div className="hidden lg:block transform transition-transform duration-300 cursor-pointer hover:scale-110">
               <ArrowRightHeaderIcon />

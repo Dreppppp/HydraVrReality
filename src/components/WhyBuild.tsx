@@ -72,7 +72,7 @@ export default function WhyBuild({ whyBuild }: whyBuildI) {
   return (
     <div className="w-full bg-[#302C42] lg:px-[84px] h-[950px] pt-[50px]">
       <div className="w-full flex justify-between items-center">
-        <div className="mx-auto text-center lg:text-left">
+        <div className=" text-center lg:text-left">
           <div>
             <h1 className="text-white text-[36px] font-bold">WHY BUILD</h1>
           </div>

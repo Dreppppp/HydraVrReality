@@ -26,11 +26,11 @@ export default function Introduction({aboutRef} : aboutRefI) {
   </div>
   <div className="mt-[60px] lg:mt-[100px] flex flex-col lg:flex-row items-center lg:items-start lg:justify-between gap-10">
     <div className="relative flex justify-center">
-      <div className="hidden lg:block absolute left-[-90px] top-[-70px] z-0">
+      <div className="hidden lg:block absolute left-[-90px] top-[-70px] z-0 w-screen overflow-hidden">
         <AboutHydraIcon />
       </div>
-      <div className="hidden lg:block absolute left-[-90px] top-[250px] z-0">
-        <AboutBottomIcon />
+      <div className="hidden lg:block absolute left-[-90px] top-[250px] z-0 w-screen overflow-hidden">
+        <AboutBottomIcon/>
       </div>
       <div className="w-[340px] h-[360px] md:w-[450px] md:h-[450px] lg:w-[530px] lg:h-[530px] relative z-10 mx-auto" ref={aboutRef}>
         <Image

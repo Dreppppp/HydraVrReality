@@ -40,12 +40,12 @@ export default function Header() {
   const prevSlide = () => {
     if (current > 0) setCurrent(current - 1);
   };
-
+  
   return (
-    <div className="relative w-full h-[650px] md:h-[750px] lg:h-[850px] bg-[#302C42] md:pt-[100px] md:px-[84px]">
+    <div className="relative w-full h-[650px] md:h-[750px] lg:h-[850px] bg-[#302C42] md:pt-[100px]">
       <div className="flex flex-col-reverse md:flex-row md:justify-between items-center px-4 sm:px-6 md:px-12 lg:px-24 py-8 md:py-16">
-        <div className="w-full md:w-[460px] flex flex-col items-start mt-2 md:mt-0">
-          <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[40px] text-white font-bold leading-snug mx-auto md:mx-[] text-center lg:text-start">
+        <div className="w-full md:w-[460px] flex flex-col items-center mt-2 md:mt-0">
+          <h1 className="text-[28px] sm:text-[32px] md:text-[38px] lg:text-[40px] text-white font-bold text-center ">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#C0B7E8] to-[#8176AF]">
               DIVE
             </span>{" "}
@@ -82,7 +82,7 @@ export default function Header() {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="hidden lg:block absolute left-[-100px] top-[10px] z-0">
+          <div className="hidden lg:block absolute left-[-100px] top-[10px] z-0 ">
             <HeaderLeftVectorIcon />
           </div>
           <div className="hidden lg:block absolute left-[90px] top-[-250px] z-0">
@@ -98,9 +98,10 @@ export default function Header() {
       </div>
 
       <div
-        className="hidden lg:flex relative z-20 mt-[30px] w-[347px] md:w-[600px] lg:w-[1270px] overflow-hidden h-[170px] rounded-[120px] 
-        bg-gradient-to-r from-[#211E2E] via-[#3A3456F2] to-[#211E2E] 
-        justify-between items-center px-[40px] mx-auto"
+        className="hidden lg:flex relative z-20 mt-[30px] 
+    w-full max-w-[calc(100%-200px)] overflow-hidden h-[170px] rounded-[120px]
+    bg-gradient-to-r from-[#211E2E] via-[#3A3456F2] to-[#211E2E]
+    justify-between items-center px-[40px] mx-auto"
       >
         <div className="flex items-center">
           <GeoPointIcon />

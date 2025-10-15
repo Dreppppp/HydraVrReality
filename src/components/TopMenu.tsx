@@ -21,7 +21,7 @@ export default function TopMenu({
 }: TopMenuProps) {
   return (
     <div className="h-[150px] w-full py-[25px] px-[20px] md:px-[50px] lg:px-[85px] bg-[#302C42] flex justify-between items-center relative z-10">
-      <div className="flex justify-between items-center w-[140px] md:w-[170px] lg:w-[193px]">
+      <div className="flex justify-between items-center w-[140px] md:w-[170px] lg:w-[193px] gap-x-4">
         <div className="w-[70px] h-[60px] md:w-[80px] md:h-[80px] lg:w-full lg:h-full">
           <HydraLogoIcon className="w-full h-full" />
         </div>
@@ -29,7 +29,7 @@ export default function TopMenu({
           <HydraTextIcon className="w-full h-full" />
         </div>
       </div>
-      <div className="hidden md:flex justify-between items-center w-full px-[85px]">
+      <div className="hidden md:flex justify-between items-center w-fit px-[85px]">
         <div className="text-white text-[12px] font-bold w-[350px] flex justify-between items-center">
           <button
             onClick={() => {
@@ -64,7 +64,8 @@ export default function TopMenu({
             HOW TO
           </button>
         </div>
-        <div className="flex justify-between items-center w-[340px]">
+      </div>
+      <div className="md:flex justify-between items-center w-fit  hidden gap-x-[38px]">
           <button
             onClick={() => {
               scrollToJoinHydra();
@@ -82,14 +83,11 @@ export default function TopMenu({
             JOIN HYDRA
           </button>
         </div>
-      </div>
-      <div>
         <div className="block md:hidden">
           <button onClick={() =>  toggleMenu()}>
             <MenuBurgerIcon />
           </button>
         </div>
-      </div>
     </div>
   );
 }

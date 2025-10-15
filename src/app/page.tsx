@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -19,7 +19,7 @@ export default function Home() {
   const technoRef = useRef<HTMLDivElement>(null);
   const joinHydraRef = useRef<HTMLDivElement>(null);
   const whyBuild = useRef<HTMLDivElement>(null);
-  let [isSideBarMenuOpen, setIsSideBarMenuOpen] = useState<boolean>(false)
+  let [isSideBarMenuOpen, setIsSideBarMenuOpen] = useState<boolean>(false);
 
   const scrollToHowBuild = () => {
     howToRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -41,12 +41,12 @@ export default function Home() {
   };
 
   const toggleMenu = () => {
-    setIsSideBarMenuOpen(prev => !prev)
-  }
+    setIsSideBarMenuOpen((prev) => !prev);
+  };
   return (
     <>
       <TopMenu
-        scrollToHowBuild={scrollToHowBuild}                     
+        scrollToHowBuild={scrollToHowBuild}
         scrollToAbout={scrollToAbout}
         scrollToIntro={scrollToIntro}
         scrollToWhyBuild={scrollToWhyBuild}
@@ -54,13 +54,21 @@ export default function Home() {
         scrollToJoinHydra={scrollToJoinHydra}
         toggleMenu={toggleMenu}
       />
-      <SideMenu isOpen={isSideBarMenuOpen} toggleMenu={toggleMenu}/>
+      <SideMenu
+        isOpen={isSideBarMenuOpen}
+        toggleMenu={toggleMenu}
+        scrollToHowBuild={scrollToHowBuild}
+        scrollToAbout={scrollToAbout}
+        scrollToWhyBuild={scrollToWhyBuild}
+        scrollToTechnologies={scrollToTechnologies}
+        scrollToJoinHydra={scrollToJoinHydra}
+      />
       <Header />
-      <Introduction aboutRef={aboutRef}/>
-      <WhyBuild whyBuild={whyBuild}/>
-      <HydraTechnologies technoRef={technoRef}/>
+      <Introduction aboutRef={aboutRef} />
+      <WhyBuild whyBuild={whyBuild} />
+      <HydraTechnologies technoRef={technoRef} />
       <HowBuildHydra howToRef={howToRef} />
-      <JoinHydra joinHydraRef={joinHydraRef}/>
+      <JoinHydra joinHydraRef={joinHydraRef} />
       <Footer />
     </>
   );

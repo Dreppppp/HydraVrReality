@@ -314,9 +314,10 @@ export const TwitterIcon = () => {
   );
 };
 
-export const HeaderLeftVectorIcon = () => {
+export const HeaderLeftVectorIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="243"
       height="565"
       viewBox="0 0 243 565"
@@ -375,9 +376,10 @@ export const HeaderLeftVectorIcon = () => {
   );
 };
 
-export const HeaderImageLeftVector = () => {
+export const HeaderImageLeftVector = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="383"
       height="846"
       viewBox="0 0 383 846"
@@ -433,9 +435,10 @@ export const HeaderImageLeftVector = () => {
   );
 };
 
-export const HeaderImageRightVector = () => {
+export const HeaderImageRightVector = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="416"
       height="675"
       viewBox="0 0 416 675"
@@ -491,9 +494,10 @@ export const HeaderImageRightVector = () => {
   );
 };
 
-export const HeaderImageBottomtVector = () => {
+export const HeaderImageBottomtVector = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="736"
       height="423"
       viewBox="-50 -50 836 523"
@@ -544,9 +548,10 @@ export const HeaderImageBottomtVector = () => {
   );
 };
 
-export const AboutHydraIcon = () => {
+export const AboutHydraIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="1440"
       height="500"
       viewBox="0 -100 1440 500"
@@ -597,9 +602,10 @@ export const AboutHydraIcon = () => {
   );
 };
 
-export const AboutBottomIcon = () => {
+export const AboutBottomIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="1440"
       height="400"
       viewBox="0 -100 1440 400"
@@ -650,9 +656,10 @@ export const AboutBottomIcon = () => {
   );
 };
 
-export const TecnologuiesVectorIcon = () => {
+export const TecnologuiesVectorIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="1440"
       height="820"
       viewBox="0 0 1440 820"
@@ -699,9 +706,10 @@ export const TecnologuiesVectorIcon = () => {
   );
 };
 
-export const HowBuildVectorIcon = () => {
+export const HowBuildVectorIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="100%"
       height="169"
       viewBox="0 0 1440 169"
@@ -732,9 +740,10 @@ export const HowBuildVectorIcon = () => {
   );
 };
 
-export const FooterTopIcon = () => {
+export const FooterTopIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="1439"
       height="368"
       viewBox="0 0 1439 368"
@@ -779,9 +788,10 @@ export const FooterTopIcon = () => {
   );
 };
 
-export const FoooterBottomVectorIcon = () => {
+export const FoooterBottomVectorIcon = ({ className }: HydraLogoIconProps) => {
   return (
     <svg
+      className={className}
       width="1440"
       height="400"
       viewBox="0 -50 1440 450"
@@ -897,34 +907,71 @@ export const MenuBurgerIcon = () => {
 
 export const LeftPrevIcon = () => {
   return (
-   <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="31" cy="31" r="31" fill="#0E0E0E" fill-opacity="0.32"/>
-<circle cx="31" cy="31" r="22" fill="url(#paint0_linear_0_1)"/>
-<path d="M35.1666 38.9167L27.25 31.0001L35.1666 23.0834" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<linearGradient id="paint0_linear_0_1" x1="54.2571" y1="32.5714" x2="9" y2="34.4571" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C0B7E8"/>
-<stop offset="1" stop-color="#8176AF"/>
-</linearGradient>
-</defs>
-</svg>
-
+    <svg
+      width="62"
+      height="62"
+      viewBox="0 0 62 62"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="31" cy="31" r="31" fill="#0E0E0E" fill-opacity="0.32" />
+      <circle cx="31" cy="31" r="22" fill="url(#paint0_linear_0_1)" />
+      <path
+        d="M35.1666 38.9167L27.25 31.0001L35.1666 23.0834"
+        stroke="#433D60"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_0_1"
+          x1="54.2571"
+          y1="32.5714"
+          x2="9"
+          y2="34.4571"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#C0B7E8" />
+          <stop offset="1" stop-color="#8176AF" />
+        </linearGradient>
+      </defs>
+    </svg>
   );
 };
 
-export const RightPrevIcon = () => {
+export const RightPrevIcon = ({className}:HydraLogoIconProps) => {
   return (
- <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="31" cy="31" r="31" fill="#0E0E0E" fill-opacity="0.32"/>
-<circle cx="31" cy="31" r="22" fill="url(#paint0_linear_0_1)"/>
-<path d="M28.8334 38.9167L36.75 31.0001L28.8334 23.0834" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<linearGradient id="paint0_linear_0_1" x1="54.2571" y1="32.5714" x2="9" y2="34.4571" gradientUnits="userSpaceOnUse">
-<stop stop-color="#C0B7E8"/>
-<stop offset="1" stop-color="#8176AF"/>
-</linearGradient>
-</defs>
-</svg>
-
+    <svg
+    className={className}
+      width="62"
+      height="62"
+      viewBox="0 0 62 62"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="31" cy="31" r="31" fill="#0E0E0E" fill-opacity="0.32" />
+      <circle cx="31" cy="31" r="22" fill="url(#paint0_linear_0_1)" />
+      <path
+        d="M28.8334 38.9166L36.75 31L28.8334 23.0833"
+        stroke="#433D60"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_0_1"
+          x1="54.2571"
+          y1="32.5714"
+          x2="9"
+          y2="34.4571"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#C0B7E8" />
+          <stop offset="1" stop-color="#8176AF" />
+        </linearGradient>
+      </defs>
+    </svg>
   );
 };

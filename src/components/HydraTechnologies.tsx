@@ -25,11 +25,11 @@ export default function HydraTechnologies({ technoRef }: technoRefI) {
 
   return (
     <div className="w-full bg-[#302C42] flex justify-center h-[630px] relative">
-      <div className="absolute left-0 top-[-550px] z-0 hidden lg:block">
+      <div className="absolute left-0 top-[-550px] z-0 hidden lg:block w-screen overflow-hidden">
         <TecnologuiesVectorIcon />
       </div>
       <div className="relative z-10">
-        <div className="mx-auto w-[380px] h-[165px] md:w-[600px] h-[230px] lg:w-[1280px] lg:h-[303px] rounded-[100px] lg:rounded-[150px] bg-cover bg-center bg-no-repeat bg-[url('../images/HydraTechnologies.png')] flex items-center justify-center">
+        <div className="mx-auto w-[380px] h-[165px] md:w-[600px] h-[230px] lg:w-[calc(100vw-80px)] lg:h-[303px] rounded-[100px] lg:rounded-[150px] bg-cover bg-center bg-no-repeat bg-[url('../images/HydraTechnologies.png')] flex items-center justify-center">
           <div
             className="w-fit flex flex-col items-center justify-center"
             ref={technoRef}

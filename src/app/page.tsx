@@ -19,7 +19,7 @@ export default function Home() {
   const technoRef = useRef<HTMLDivElement>(null);
   const joinHydraRef = useRef<HTMLDivElement>(null);
   const whyBuild = useRef<HTMLDivElement>(null);
-  let [isSideBarMenuOpen, setIsSideBarMenuOpen] = useState<boolean>(false);
+  const [isSideBarMenuOpen, setIsSideBarMenuOpen] = useState<boolean>(false);
 
   const scrollToHowBuild = () => {
     howToRef.current?.scrollIntoView({ behavior: "smooth" });
